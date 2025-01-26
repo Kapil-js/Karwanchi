@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Karwanchi</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link href="assets/css/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- main header -->
+    <header class="main_header">
+      <nav class="navbar_nav">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="main_header_logo">
+                <a href="/">
+                  <img
+                    src="assets/Images/karwanchi-logo.svg"
+                    alt="logo"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-end">
+              <div class="humburger_icon">
+                <div class="translte_inner">
+                  <svg
+                    width="19"
+                    height="18"
+                    viewBox="0 0 19 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.30225 17.1813C10.3506 17.1813 11.3886 16.9717 12.3572 16.5644C13.3257 16.1572 14.2057 15.5603 14.947 14.8078C15.6883 14.0553 16.2763 13.1619 16.6775 12.1787C17.0787 11.1955 17.2852 10.1418 17.2852 9.07758C17.2852 8.01338 17.0787 6.95961 16.6775 5.97642C16.2763 4.99324 15.6883 4.09989 14.947 3.3474C14.2057 2.5949 13.3257 1.99798 12.3572 1.59073C11.3886 1.18349 10.3506 0.973877 9.30225 0.973877M9.30225 17.1813C8.25392 17.1813 7.21585 16.9717 6.24732 16.5644C5.27879 16.1572 4.39876 15.5603 3.65748 14.8078C2.91619 14.0553 2.32818 13.1619 1.927 12.1787C1.52582 11.1955 1.31934 10.1418 1.31934 9.07758C1.31934 8.01338 1.52582 6.95961 1.927 5.97642C2.32818 4.99324 2.91619 4.09989 3.65748 3.3474C4.39876 2.5949 5.27879 1.99798 6.24732 1.59073C7.21585 1.18349 8.25392 0.973877 9.30225 0.973877M9.30225 17.1813C11.7512 17.1813 12.7979 12.5325 12.7979 9.07758C12.7979 5.6227 11.7512 0.973877 9.30225 0.973877M9.30225 17.1813C6.85327 17.1813 5.80662 12.5325 5.80662 9.07758C5.80662 5.6227 6.85327 0.973877 9.30225 0.973877M1.76283 6.37634H16.8417M1.76283 11.7788H16.8417"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="humburger_inner"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                >
+                  <svg
+                    width="40"
+                    height="27"
+                    viewBox="0 0 40 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.52539 13.4478H37.3165"
+                      stroke="white"
+                      stroke-width="4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.52539 2.24316H25.7195M14.1224 24.6523H37.3165"
+                      stroke="white"
+                      stroke-width="4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="offcanvas offcanvas-end header-offcanvas"
+                tabindex="-1"
+                id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel"
+              >
+                <div class="offcanvas-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body text-center">
+                  <div class="nav-logo">
+                    <img
+                      src="assets/Images/footer-logo.svg"
+                      alt="logo"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <nav class="nav_bar">
+                    <ul>
+                      <li class="nav-item">
+                        <a href="/about.html" class="nav-link">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="/about.html" class="nav-link">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="/products.html" class="nav-link">Products</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="/careers.html" class="nav-link">Careers</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="/contact.html" class="nav-link">Contact Us</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div class="social-links">
+                    <ul>
+                      <li>
+                        <a href=""
+                          ><svg
+                            width="59"
+                            height="59"
+                            viewBox="0 0 59 59"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M30.4763 33.6261H35.0451L36.8726 26.316H30.4763V22.661C30.4763 20.7786 30.4763 19.0059 34.1313 19.0059H36.8726V12.8655C36.2768 12.7869 34.0271 12.6096 31.6513 12.6096C26.6896 12.6096 23.1662 15.6378 23.1662 21.199V26.316H17.6836V33.6261H23.1662V49.1601H30.4763V33.6261Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><svg
+                            width="60"
+                            height="59"
+                            viewBox="0 0 60 59"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M13.1545 21.7472C13.1545 19.3238 14.1173 16.9996 15.8309 15.286C17.5445 13.5723 19.8687 12.6096 22.2922 12.6096H36.9123C39.3358 12.6096 41.66 13.5723 43.3736 15.286C45.0872 16.9996 46.0499 19.3238 46.0499 21.7472V36.3674C46.0499 38.7909 45.0872 41.115 43.3736 42.8287C41.66 44.5423 39.3358 45.505 36.9123 45.505H22.2922C19.8687 45.505 17.5445 44.5423 15.8309 42.8287C14.1173 41.115 13.1545 38.7909 13.1545 36.3674V21.7472ZM22.2922 16.2647C20.8381 16.2647 19.4436 16.8423 18.4154 17.8705C17.3872 18.8987 16.8096 20.2932 16.8096 21.7472V36.3674C16.8096 37.8215 17.3872 39.216 18.4154 40.2442C19.4436 41.2724 20.8381 41.85 22.2922 41.85H36.9123C38.3664 41.85 39.7609 41.2724 40.7891 40.2442C41.8173 39.216 42.3949 37.8215 42.3949 36.3674V21.7472C42.3949 20.2932 41.8173 18.8987 40.7891 17.8705C39.7609 16.8423 38.3664 16.2647 36.9123 16.2647H22.2922ZM36.1758 20.3108C36.1758 19.8261 36.3684 19.3613 36.7111 19.0185C37.0538 18.6758 37.5187 18.4833 38.0034 18.4833H38.0216C38.5063 18.4833 38.9712 18.6758 39.3139 19.0185C39.6566 19.3613 39.8492 19.8261 39.8492 20.3108C39.8492 20.7955 39.6566 21.2603 39.3139 21.6031C38.9712 21.9458 38.5063 22.1383 38.0216 22.1383H38.0034C37.5187 22.1383 37.0538 21.9458 36.7111 21.6031C36.3684 21.2603 36.1758 20.7955 36.1758 20.3108ZM29.6022 23.5748C28.1482 23.5748 26.7537 24.1524 25.7255 25.1806C24.6973 26.2087 24.1197 27.6033 24.1197 29.0573C24.1197 30.5114 24.6973 31.9059 25.7255 32.9341C26.7537 33.9623 28.1482 34.5399 29.6022 34.5399C31.0563 34.5399 32.4508 33.9623 33.479 32.9341C34.5072 31.9059 35.0848 30.5114 35.0848 29.0573C35.0848 27.6033 34.5072 26.2087 33.479 25.1806C32.4508 24.1524 31.0563 23.5748 29.6022 23.5748ZM20.4646 29.0573C20.4646 26.6339 21.4273 24.3097 23.141 22.5961C24.8546 20.8824 27.1788 19.9197 29.6022 19.9197C32.0257 19.9197 34.3499 20.8824 36.0635 22.5961C37.7771 24.3097 38.7399 26.6339 38.7399 29.0573C38.7399 31.4808 37.7771 33.805 36.0635 35.5186C34.3499 37.2322 32.0257 38.1949 29.6022 38.1949C27.1788 38.1949 24.8546 37.2322 23.141 35.5186C21.4273 33.805 20.4646 31.4808 20.4646 29.0573Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><svg
+                            width="59"
+                            height="59"
+                            viewBox="0 0 59 59"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <mask
+                              id="mask0_4_67"
+                              style="mask-type: luminance"
+                              maskUnits="userSpaceOnUse"
+                              x="15"
+                              y="13"
+                              width="33"
+                              height="33"
+                            >
+                              <path
+                                d="M15.22 13.1661H47.4269V45.3731H15.22V13.1661Z"
+                                fill="white"
+                              />
+                            </mask>
+                            <g mask="url(#mask0_4_67)">
+                              <path
+                                d="M40.583 14.6748H45.5221L34.7328 27.0377L47.4269 43.8635H37.4888L29.6993 33.6608L20.7964 43.8635H15.8526L27.3919 30.6357L15.22 14.6771H25.4112L32.4415 24.001L40.583 14.6748ZM38.8461 40.9005H41.5837L23.9159 17.4837H20.9804L38.8461 40.9005Z"
+                                fill="white"
+                              />
+                            </g>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><svg
+                            width="60"
+                            height="59"
+                            viewBox="0 0 60 59"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M22.3264 19.0285C22.3259 19.9063 21.9768 20.7479 21.3558 21.3683C20.7348 21.9887 19.8928 22.337 19.0151 22.3365C18.1373 22.3361 17.2956 21.987 16.6752 21.366C16.0549 20.745 15.7066 19.903 15.707 19.0252C15.7075 18.1474 16.0566 17.3057 16.6776 16.6854C17.2986 16.065 18.1406 15.7167 19.0184 15.7172C19.8961 15.7176 20.7378 16.0667 21.3582 16.6877C21.9785 17.3087 22.3268 18.1507 22.3264 19.0285ZM22.4257 24.7873H15.8063V45.5059H22.4257V24.7873ZM32.8843 24.7873H26.298V45.5059H32.8181V34.6336C32.8181 28.5769 40.7116 28.0143 40.7116 34.6336V45.5059H47.2483V32.383C47.2483 22.1727 35.5651 22.5533 32.8181 27.5675L32.8843 24.7873Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><svg
+                            width="59"
+                            height="59"
+                            viewBox="0 0 59 59"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <mask
+                              id="mask0_4_78"
+                              style="mask-type: luminance"
+                              maskUnits="userSpaceOnUse"
+                              x="11"
+                              y="14"
+                              width="37"
+                              height="30"
+                            >
+                              <path
+                                d="M29.4294 16.4764C45.8771 16.4764 45.8771 16.4764 45.8771 29.2691C45.8771 42.0618 45.8771 42.0618 29.4294 42.0618C12.9817 42.0618 12.9817 42.0618 12.9817 29.2691C12.9817 16.4764 12.9817 16.4764 29.4294 16.4764Z"
+                                fill="white"
+                                stroke="white"
+                                stroke-width="3.65505"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M25.7744 22.8721L36.7395 29.2684L25.7744 35.6647V22.8721Z"
+                                fill="black"
+                              />
+                            </mask>
+                            <g mask="url(#mask0_4_78)">
+                              <path
+                                d="M51.3586 7.33875H7.49805V51.1993H51.3586V7.33875Z"
+                                fill="white"
+                              />
+                            </g>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main header -->
+
+    <!-- hero sec -->
+
+    <section class="other-page-hero-sec">
+      <div class="inner-video">
+        <video autoplay loop class="hero-main-video">
+          <source src="assets/Images/hero-video-bg.mp4" type="video/mp4" />
+          <source src="assets/Images/hero-video-bg.mp4" type="video/ogg" />
+        </video>
+        <div class="hero-content text-center">
+          <div class="breadcurb">
+            <ul>
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/">About Us</a>
+              </li>
+            </ul>
+          </div>
+          <h3 class="sub-headng">About Us</h3>
+          <div class="hero-main-heading">
+            <img
+              src="assets/Images/footer-logo.svg"
+              alt="logo"
+              class="img-fluid"
+            />
+            <h2>About Us</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero sec -->
+
+    <!-- Values sec -->
+    <section class="values-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="other-page-heaidng">
+              <h2>Values of Karwanchi</h2>
+              <p>
+                Karwanchi Group is looking forward to more innovation and is
+                looking forward to the dream of further expansion and leadership
+                in wholesale and retail, and always promises you the best
+                products.
+              </p>
+            </div>
+          </div>
+          <div class="values-inner-main">
+            <div class="center-value-key">
+              <img
+                src="assets/Images/value-round-shape.png"
+                alt="shape"
+                class="img-fluid"
+              />
+              <h2>3 keys Value</h2>
+            </div>
+            <div class="value-circle mission">
+              <svg
+                width="72"
+                height="72"
+                viewBox="0 0 72 72"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M51.6529 31.9004C51.3347 31.0954 50.4242 30.7012 49.6189 31.0191C48.8138 31.3374 48.4193 32.248 48.7376 33.0531C49.5341 35.0676 49.9378 37.1968 49.9378 39.3816C49.9378 48.8724 42.2166 56.5939 32.7256 56.5939C23.234 56.5939 15.5117 48.8724 15.5117 39.3816C15.5117 29.8908 23.234 22.1693 32.7256 22.1693C34.9181 22.1693 37.0508 22.5756 39.0647 23.3769C39.8689 23.6974 40.7804 23.3043 41.1005 22.5002C41.4207 21.6958 41.0281 20.7843 40.2237 20.4643C37.8395 19.5154 35.3167 19.0344 32.7258 19.0344C21.5056 19.0344 12.377 28.162 12.377 39.3815C12.377 50.6009 21.5051 59.7285 32.7256 59.7285C43.9449 59.7285 53.0727 50.6009 53.0727 39.3815C53.0726 36.8005 52.5948 34.2835 51.6529 31.9004Z"
+                  fill="#3C3C3C"
+                />
+                <path
+                  d="M61.3168 31.1844C61.0787 30.3521 60.2115 29.8711 59.3787 30.1087C58.5464 30.347 58.0649 31.2147 58.303 32.0469C58.9824 34.4217 59.327 36.8896 59.327 39.3813C59.327 54.05 47.3938 65.9842 32.726 65.9842C18.0572 65.9842 6.12321 54.0502 6.12321 39.3813C6.12321 24.7123 18.0571 12.7786 32.726 12.7786C35.2234 12.7786 37.6953 13.1246 40.0728 13.8073C40.9049 14.046 41.773 13.5654 42.0118 12.7333C42.2507 11.9011 41.7699 11.033 40.9378 10.7942C38.2791 10.0307 35.5161 9.64355 32.726 9.64355C16.3286 9.6437 2.98828 22.9839 2.98828 39.3815C2.98828 55.7789 16.3286 69.1192 32.726 69.1192C49.1224 69.1192 62.4619 55.7789 62.4619 39.3815C62.4618 36.5977 62.0766 33.8398 61.3168 31.1844Z"
+                  fill="#3C3C3C"
+                />
+                <path
+                  d="M43.6413 38.4243C43.5645 37.5621 42.8026 36.9289 41.9408 37.0024C41.0784 37.0793 40.4417 37.8408 40.5188 38.703C40.5386 38.9262 40.5488 39.1545 40.5488 39.3814C40.5488 43.6943 37.0401 47.2029 32.7274 47.2029C28.4136 47.2029 24.9041 43.6941 24.9041 39.3814C24.9043 35.0675 28.4138 31.5581 32.7275 31.5581C32.9685 31.5581 33.2044 31.5686 33.4291 31.5892C34.2919 31.6684 35.0543 31.0344 35.1339 30.1723C35.2133 29.3103 34.5789 28.5472 33.7169 28.4674C33.3972 28.438 33.0644 28.4231 32.7278 28.4231C26.6854 28.4231 21.7695 33.3387 21.7695 39.3812C21.7695 45.4227 26.6854 50.3375 32.7278 50.3375C38.769 50.3375 43.6841 45.4227 43.6841 39.3812C43.6838 39.0619 43.6695 38.7397 43.6413 38.4243Z"
+                  fill="#EE3D40"
+                />
+                <path
+                  d="M69.1864 13.2328C68.6994 12.0569 67.5621 11.297 66.2893 11.297H60.8239V5.83171C60.8239 4.55873 60.064 3.42161 58.8882 2.93467C57.7128 2.44781 56.3719 2.71472 55.4722 3.61445L46.3401 12.7467C45.4522 13.6344 44.9634 14.8149 44.9634 16.071V24.9408L32.2247 37.6795C31.6126 38.2915 31.6126 39.2841 32.2247 39.8963C32.5306 40.2023 32.9319 40.3554 33.333 40.3554C33.7341 40.3554 34.1353 40.2023 34.4413 39.8963L47.1801 27.1575H56.0499C57.3059 27.1575 58.4866 26.6686 59.3742 25.781L68.5064 16.6486C69.4064 15.7486 69.6732 14.408 69.1864 13.2328ZM48.0983 16.0708C48.0984 15.6523 48.2612 15.2589 48.5568 14.9634L57.689 5.83262V12.2153L48.0982 21.8061L48.0983 16.0708ZM57.1576 23.5642C56.8664 23.8554 56.4625 24.0226 56.05 24.0226H50.315L59.9056 14.4321L66.2888 14.4329L57.1576 23.5642Z"
+                  fill="#EE3D40"
+                />
+              </svg>
+              <h3>Mission</h3>
+              <p>
+                Karwanchi Group is looking forward to more innovation and is
+                looking forward to the dream offurther expansion and leadership
+                in wholesale and retail, and always promises you the best
+                products.
+              </p>
+            </div>
+            <div class="value-circle vision">
+              <svg
+                width="89"
+                height="69"
+                viewBox="0 0 89 69"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_297_2034)">
+                  <path
+                    d="M47.2949 20.5446V26.4011C49.7088 27.2526 51.6192 29.1528 52.4731 31.5558H58.3562C57.2288 26.024 52.8519 21.6668 47.2949 20.5446Z"
+                    fill="#C00D0D"
+                  />
+                  <path
+                    d="M52.4722 37.2029C51.3049 40.4911 48.1649 42.8504 44.4602 42.8504C39.7601 42.8504 35.9505 39.058 35.9505 34.3792C35.9505 30.6928 38.3205 27.567 41.6237 26.4034V20.5487C35.1505 21.8574 30.2773 27.5489 30.2773 34.3795C30.2773 42.1772 36.627 48.4982 44.4602 48.4982C51.3204 48.4982 57.0389 43.6471 58.3539 37.2032L52.4722 37.2029Z"
+                    fill="#C00D0D"
+                  />
+                  <path
+                    d="M88.0846 33.4623C87.3727 32.6349 70.3432 13.2018 44.4594 13.2018C18.5756 13.2018 1.54643 32.6346 0.834487 33.4623L0.0429688 34.3794L0.834487 35.2972C1.54643 36.1246 18.5759 55.5576 44.4597 55.5576C70.3435 55.5576 87.373 36.1246 88.0849 35.2972L88.8764 34.3794L88.0846 33.4623ZM62.8973 34.3794C62.8973 44.4997 54.626 52.7339 44.4594 52.7339C34.2928 52.7339 26.0218 44.4997 26.0218 34.3794C26.0218 24.2591 34.2934 16.0249 44.4594 16.0249C54.6254 16.0249 62.8973 24.2591 62.8973 34.3794ZM3.84383 34.3782C6.73154 31.3921 16.7317 21.9426 31.1331 17.896C26.2926 21.7814 23.1849 27.7226 23.1849 34.3797C23.1849 41.0323 26.288 46.9707 31.1216 50.8562C16.7432 46.8039 6.73306 37.3613 3.84383 34.3782ZM57.7857 50.8631C62.6262 46.9777 65.7339 41.0365 65.7339 34.3794C65.7339 27.7265 62.6307 21.7884 57.7972 17.9029C72.1774 21.9549 82.186 31.3975 85.0753 34.3809C82.1875 37.367 72.1871 46.8168 57.7857 50.8631Z"
+                    fill="#3C3C3C"
+                  />
+                  <path
+                    d="M44.4591 7.55397C56.425 7.55397 68.0905 11.256 79.1319 18.558L80.7004 16.2059C69.3483 8.69913 56.815 4.73022 44.4587 4.73022C34.5974 4.73022 24.8366 7.16843 15.4434 11.9759L16.7411 14.4876C25.728 9.88645 35.0546 7.55397 44.4591 7.55397Z"
+                    fill="#3C3C3C"
+                  />
+                  <path
+                    d="M13.9611 15.9999L12.5526 13.5491C11.0322 14.4144 9.57291 15.3096 8.2168 16.2063L9.78531 18.5583C11.0906 17.6969 12.4945 16.8358 13.9611 15.9999Z"
+                    fill="#3C3C3C"
+                  />
+                  <path
+                    d="M44.4581 61.2051C32.4922 61.2051 20.8266 57.503 9.78531 50.201L8.2168 52.5531C19.5689 60.0599 32.1021 64.0288 44.4584 64.0288C54.3212 64.0288 64.0818 61.5891 73.4738 56.7817L72.1761 54.27C63.191 58.8726 53.8644 61.2051 44.4581 61.2051Z"
+                    fill="#3C3C3C"
+                  />
+                  <path
+                    d="M74.957 52.7592L76.3655 55.21C77.8859 54.3447 79.3452 53.4495 80.7013 52.5529L79.1328 50.2008C77.8275 51.0622 76.4236 51.9237 74.957 52.7592Z"
+                    fill="#3C3C3C"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_297_2034">
+                    <rect
+                      width="88.8335"
+                      height="68.3334"
+                      fill="white"
+                      transform="translate(0.0429688 0.212891)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <h3>Vision</h3>
+              <p>
+                Karwanchi's vision is to pioneer and inspire local and global
+                markets by offering 100% natural, high-quality products that
+                promote a healthy lifestyle.
+              </p>
+            </div>
+            <div class="value-circle goals">
+              <svg
+                width="89"
+                height="85"
+                viewBox="0 0 89 85"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_297_2077)">
+                  <path
+                    d="M39.2578 7.19983C43.1211 7.19983 46.8404 7.75653 50.3552 8.78719C50.9158 8.9527 51.4839 9.13325 52.0596 9.32885C52.6959 9.54702 53.3247 9.78024 53.9458 10.0285L51.3854 14.7003C47.6206 13.2634 43.5377 12.481 39.2654 12.481H39.2578C34.5915 12.481 30.145 13.4214 26.0999 15.1216C25.4409 15.4 24.7894 15.6934 24.1607 16.0093C20.8882 17.6343 17.9188 19.7709 15.3585 22.3136L15.3433 22.3287C14.4949 23.1713 13.6844 24.0665 12.9344 24.9994C12.1769 25.9398 11.4649 26.9178 10.8058 27.9334C7.40464 33.1694 5.44269 39.391 5.44269 46.0639V46.0715C5.44269 50.7057 6.38958 55.1217 8.10154 59.139C8.38182 59.7935 8.67725 60.4405 8.9954 61.0649C10.6316 64.3073 12.7829 67.2639 15.3509 69.8067L15.366 69.8217C16.2144 70.6643 17.1159 71.4693 18.0552 72.2216C19.0021 72.9739 19.9868 73.6811 21.0094 74.3356C26.2741 77.6909 32.5387 79.6393 39.2578 79.6393H39.2654C43.9316 79.6393 48.3782 78.699 52.4232 76.9987C53.0823 76.7204 53.7337 76.427 54.3624 76.111C57.6349 74.486 60.6043 72.3495 63.1647 69.8067H63.1723L63.195 69.7841C64.0434 68.9416 64.8463 68.0538 65.6039 67.121C66.3614 66.1806 67.0734 65.2026 67.7324 64.187C71.1109 58.966 73.0729 52.7519 73.0729 46.0865L78.383 45.274C78.3905 45.5373 78.3906 45.8006 78.3906 46.0639V46.0715C78.3906 51.4354 77.2922 56.5511 75.3151 61.1928C74.9969 61.9451 74.6485 62.6899 74.2773 63.4271C72.3835 67.1887 69.8913 70.6041 66.9295 73.5457L66.9143 73.5607C65.9296 74.5387 64.8842 75.4716 63.801 76.3367C62.7102 77.2094 61.5663 78.0294 60.3846 78.7817C54.2943 82.6711 47.0449 84.928 39.2654 84.928C33.8643 84.928 28.7133 83.8372 24.0395 81.8737C23.282 81.5577 22.532 81.2117 21.7897 80.843C18.0021 78.9623 14.5631 76.4872 11.6012 73.5457L11.5861 73.5231C10.6013 72.5451 9.66958 71.5144 8.79087 70.4311C7.91216 69.3478 7.08648 68.2118 6.32898 67.0382C2.39752 60.9897 0.125 53.7901 0.125 46.0639V46.0564C0.125 40.6925 1.22338 35.5843 3.20048 30.9351C3.51863 30.1828 3.86708 29.438 4.23826 28.7007C6.13202 24.9392 8.62422 21.5237 11.5861 18.5822L11.6012 18.5672C12.586 17.5892 13.6313 16.6638 14.7146 15.7912C15.8054 14.9185 16.9492 14.0985 18.1309 13.3462C24.2289 9.45674 31.4782 7.19983 39.2578 7.19983ZM39.2578 33.7637H39.2654C39.8108 33.7637 40.3486 33.8014 40.8713 33.8691L37.97 39.1653C37.4625 39.2556 36.9701 39.406 36.508 39.6016C36.3717 39.6618 36.2353 39.722 36.099 39.7897C35.4172 40.1282 34.7961 40.5721 34.2582 41.1062L34.2431 41.1213C34.0689 41.2943 33.9098 41.4749 33.7507 41.6629C33.5916 41.8585 33.4401 42.0617 33.3038 42.2798C32.5993 43.3707 32.1902 44.6722 32.1902 46.0639V46.0715C32.1902 47.0419 32.3872 47.9597 32.7508 48.8023C32.8114 48.9453 32.872 49.0807 32.9402 49.2086C33.2811 49.8857 33.728 50.5025 34.2658 51.0367L34.281 51.0517C34.4552 51.2248 34.637 51.3903 34.8264 51.5407C35.0233 51.6987 35.2278 51.8492 35.4475 51.9846C36.5459 52.6842 37.8564 53.0905 39.2578 53.0905C40.235 53.0905 41.1591 52.8949 42.0075 52.5413C42.1515 52.4811 42.2802 52.4209 42.4166 52.3532C43.0983 52.0147 43.7195 51.5708 44.2573 51.0367L44.2725 51.0216C44.3709 50.9238 44.4618 50.826 44.5452 50.7358C44.6285 50.6455 44.7118 50.5402 44.7952 50.4348L51.1658 49.4568C51.0294 49.9383 50.8628 50.4123 50.6658 50.8636C50.5673 51.0969 50.4537 51.3376 50.3401 51.5708C49.7417 52.767 48.9539 53.8428 48.0145 54.7756L47.9918 54.7907C47.6812 55.0916 47.3631 55.385 47.0222 55.6558C46.6738 55.9342 46.3177 56.19 45.939 56.4307C44.0073 57.657 41.7197 58.3717 39.2578 58.3717C37.5458 58.3717 35.9172 58.0256 34.44 57.4012C34.2052 57.3034 33.9628 57.1905 33.728 57.0777C32.5235 56.4834 31.4403 55.701 30.501 54.7681L30.4783 54.7455C30.1753 54.4446 29.8798 54.1211 29.6071 53.7826C29.3269 53.4365 29.0693 53.0829 28.8269 52.7068C27.5922 50.7959 26.8725 48.5165 26.8725 46.0715V46.0639C26.8725 44.3637 27.221 42.7463 27.8497 41.2793C27.9482 41.0461 28.0618 40.8053 28.1755 40.5721C28.7739 39.3835 29.5617 38.3001 30.501 37.3748C30.8116 37.0664 31.1449 36.773 31.4933 36.4946C31.8418 36.2163 32.1978 35.9605 32.5766 35.7197C34.5006 34.4784 36.7959 33.7637 39.2578 33.7637ZM39.2578 20.3727C41.5757 20.3727 43.818 20.6736 45.9466 21.2454C46.295 21.3356 46.6359 21.4335 46.9768 21.5463C47.1586 21.6065 47.3479 21.6667 47.5297 21.7269L44.9391 26.4589C43.1362 25.9473 41.2273 25.6689 39.2502 25.6689C36.4171 25.6689 33.7128 26.2407 31.2509 27.2713C30.8646 27.4368 30.4707 27.6174 30.0692 27.813L30.0389 27.828C28.0618 28.8136 26.2741 30.1075 24.7212 31.6498L24.7061 31.6648C24.191 32.1764 23.7062 32.718 23.2441 33.2823C22.782 33.854 22.3502 34.4483 21.9488 35.0652C19.8959 38.24 18.7066 42.0241 18.7066 46.079V46.0865C18.7066 48.9001 19.2823 51.5859 20.3201 54.0308C20.4868 54.4296 20.6686 54.8208 20.8655 55.2044C21.8579 57.1755 23.1683 58.966 24.7288 60.5157C25.2515 61.0348 25.8045 61.5238 26.3726 61.9827C26.9483 62.4416 27.5467 62.8704 28.1679 63.2692C31.3646 65.2929 35.1748 66.474 39.2578 66.474H39.2654C42.0984 66.474 44.8027 65.9022 47.2646 64.8716C47.6661 64.7061 48.06 64.5255 48.4463 64.3299C50.431 63.3444 52.2339 62.0429 53.7943 60.4932C54.317 59.9741 54.817 59.4249 55.2715 58.8606C55.7335 58.2889 56.1653 57.6946 56.5668 57.0777C58.2712 54.4446 59.3771 51.4053 59.7104 48.1328L65.1039 47.3052C64.9524 50.3972 64.2555 53.3463 63.1041 56.0621C62.892 56.5586 62.6647 57.0551 62.4147 57.5366C61.1649 60.0267 59.5135 62.2836 57.5591 64.2246L57.544 64.2396C56.8925 64.8866 56.2032 65.496 55.4911 66.0753C54.7715 66.6545 54.014 67.1962 53.2338 67.6927C49.2038 70.2581 44.4088 71.7552 39.2729 71.7552C35.7051 71.7552 32.2963 71.033 29.2057 69.739C28.7057 69.5283 28.2058 69.3027 27.721 69.0544C25.2136 67.8131 22.9411 66.1731 20.9867 64.2321L20.9716 64.2095C20.3201 63.5626 19.7065 62.8855 19.1308 62.1708C18.5476 61.4561 18.0021 60.7038 17.5022 59.9289C14.9115 55.9267 13.4117 51.1721 13.4117 46.0639V46.0564C13.4117 42.5131 14.1389 39.1277 15.4494 36.0583C15.6615 35.5618 15.8887 35.0652 16.1387 34.5838C17.3886 32.0936 19.0399 29.8367 20.9943 27.8958L21.0094 27.8807C21.6609 27.2337 22.3427 26.6244 23.0623 26.0526C23.7819 25.4733 24.5394 24.9317 25.3197 24.4352C29.3269 21.8623 34.1219 20.3727 39.2578 20.3727Z"
+                    fill="#3C3C3C"
+                  />
+                  <path
+                    d="M38.4531 46.5013L63.0115 1.70898L66.1854 27.1444L89.206 38.7224L38.4531 46.5013Z"
+                    fill="#C00D0D"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_297_2077">
+                    <rect width="89" height="85" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <h3>Our Goals</h3>
+              <p>
+                Karwanchi Group aims for innovation, expansion, and leadership
+                in wholesale and retail, promising the best products always.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Values sec -->
+
+    <!-- history sec -->
+
+    <section class="history-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="big-title">
+              <h1 class="text-center">history</h1>
+            </div>
+            <div class="history-img">
+              <img
+                src="assets/Images/history-img.png"
+                alt="history image"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="other-page-heaidng text-center">
+              <h2 class="d-inline-block">Karwanchi’s History</h2>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="history-content">
+              <p>
+                The Karwanchi Companies Groups are one of the most important
+                companies that supply the local markets in all the governorates
+                of the country with its products which became a permanent
+                companion to the Iraqi family. This is because the products are
+                characterized by the specifications that enabled them to reach
+                the level of marketing excellence.
+              </p>
+              <p>
+                In 2007, another company, Mina Company for production of healthy
+                water Ltd, was established with six production lines for plastic
+                cups and with three PET lines and three production lines for
+                producing 18 liter water bottles on an area of 20,000 square
+                meters, with 220 employees. Karwanchi Group of Companies has
+                participated in many international and local exhibitions and has
+                received several awards for its participation in many events.
+              </p>
+              <p>
+                The company has a founding license from the Directorate General
+                for Industrial Development of Iraq with the number 81387, and
+                also has a health certificates numbered 36 in addition to the
+                certificates of ISO 9001: 2008 & 22000: 2005 and Halal
+                certi&ate.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="history-content">
+              <p>
+                The Karwanchi family career started in 1999, and since that
+                date, Karwanchi Group has been able to hold leading positions as
+                the leading I raqi companies in these products. The company
+                began its journey with the Ta'amim Company for soft drinks in
+                Kirkuk governorate in 1999 with two glass production lines and
+                with a gas factory and with three PET lines with an area of
+                11,500 square meters. Its current is 160 employees.
+              </p>
+              <p>
+                In 2010, Karwanchi Company Ltd for the production of soft
+                drinks, healthy water, juices and dairy products was established
+                on an area of 150.000 square meters, 60.000 of which are closed
+                areas including production lines and warehouses, 20.000 square
+                meters for storage areas for products, and 20.000 square meters
+                are typical gardens and green spaces and 25,000 square meters
+                are streets and inner corridors, as well having 25.000 square
+                meters as a vacant space for development and expansion.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- history sec -->
+
+    <!-- about sec -->
+    <section class="about-sec">
+      <div class="about-inner-content">
+        <video autoplay loop class="about-main-video">
+          <source src="assets/Images/about-video.mp4" type="video/mp4" />
+          <source src="assets/Images/about-video.mp4" type="video/ogg" />
+        </video>
+      </div>
+    </section>
+    <!-- about sec -->
+
+    <!-- Our Brands sec -->
+
+    <section class="brands-sec">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="other-page-heaidng text-center">
+              <h2 class="d-inline-block">Our Brands</h2>
+            </div>
+            <!-- Swiper -->
+            <div class="swiper brandsSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="brand-img">
+                    <img
+                      src="assets/Images/brands-1.png"
+                      alt="brand"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="brand-img">
+                    <img
+                      src="assets/Images/brands-2.png"
+                      alt="brand"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="brand-img">
+                    <img
+                      src="assets/Images/brands-3.png"
+                      alt="brand"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="brand-img">
+                    <img
+                      src="assets/Images/brands-4.png"
+                      alt="brand"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="brand-img">
+                    <img
+                      src="assets/Images/brands-5.png"
+                      alt="brand"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="brand-img">
+                    <img
+                      src="assets/Images/brands-6.png"
+                      alt="brand"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="brand-img">
+                    <img
+                      src="assets/Images/brands-7.png"
+                      alt="brand"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="brand-img">
+                    <img
+                      src="assets/Images/brands-3.png"
+                      alt="brand"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="brand-img">
+                    <img
+                      src="assets/Images/brands-4.png"
+                      alt="brand"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="brand-img">
+                    <img
+                      src="assets/Images/brands-5.png"
+                      alt="brand"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="brand-img">
+                    <img
+                      src="assets/Images/brands-6.png"
+                      alt="brand"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="brand-img">
+                    <img
+                      src="assets/Images/brands-7.png"
+                      alt="brand"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Brands sec -->
+    <div class="made-in-title mb-5">
+      <span class="line"></span>
+      <h3>Made in Iraq</h3>
+      <span class="line"></span>
+    </div>
+
+    <!-- footer sec -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="footer-item">
+              <div class="footer-logo">
+                <a href="">
+                  <img
+                    src="assets/Images/footer-logo.svg"
+                    alt="logo"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="footer-item">
+              <div class="footer-links">
+                <ul>
+                  <li>
+                    <a href=""> Production Line </a>
+                  </li>
+                  <li>
+                    <a href="">Certificates</a>
+                  </li>
+                  <li>
+                    <a href=""> Contact us</a>
+                  </li>
+                  <li>
+                    <a href=""> copyright </a>
+                  </li>
+                  <li>
+                    <a href="">careers</a>
+                  </li>
+                  <li>
+                    <a href="">Privacy Policy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-item d-flex justify-content-end">
+              <div class="socal-links">
+                <ul>
+                  <li>
+                    <a href="">
+                      <svg
+                        width="59"
+                        height="59"
+                        viewBox="0 0 59 59"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M30.6188 33.6745H35.1876L37.0152 26.3644H30.6188V22.7093C30.6188 20.827 30.6188 19.0543 34.2739 19.0543H37.0152V12.9138C36.4194 12.8352 34.1697 12.658 31.7939 12.658C26.8322 12.658 23.3087 15.6862 23.3087 21.2473V26.3644H17.8262V33.6745H23.3087V49.2084H30.6188V33.6745Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href=""
+                      ><svg
+                        width="59"
+                        height="59"
+                        viewBox="0 0 59 59"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13.084 21.7953C13.084 19.3719 14.0467 17.0477 15.7603 15.3341C17.474 13.6204 19.7982 12.6577 22.2216 12.6577H36.8418C39.2652 12.6577 41.5894 13.6204 43.303 15.3341C45.0167 17.0477 45.9794 19.3719 45.9794 21.7953V36.4155C45.9794 38.839 45.0167 41.1631 43.303 42.8768C41.5894 44.5904 39.2652 45.5531 36.8418 45.5531H22.2216C19.7982 45.5531 17.474 44.5904 15.7603 42.8768C14.0467 41.1631 13.084 38.839 13.084 36.4155V21.7953ZM22.2216 16.3128C20.7675 16.3128 19.373 16.8904 18.3448 17.9186C17.3167 18.9467 16.739 20.3413 16.739 21.7953V36.4155C16.739 37.8696 17.3167 39.2641 18.3448 40.2923C19.373 41.3204 20.7675 41.8981 22.2216 41.8981H36.8418C38.2958 41.8981 39.6904 41.3204 40.7185 40.2923C41.7467 39.2641 42.3243 37.8696 42.3243 36.4155V21.7953C42.3243 20.3413 41.7467 18.9467 40.7185 17.9186C39.6904 16.8904 38.2958 16.3128 36.8418 16.3128H22.2216ZM36.1053 20.3589C36.1053 19.8742 36.2978 19.4094 36.6406 19.0666C36.9833 18.7239 37.4481 18.5314 37.9328 18.5314H37.9511C38.4358 18.5314 38.9006 18.7239 39.2433 19.0666C39.5861 19.4094 39.7786 19.8742 39.7786 20.3589C39.7786 20.8436 39.5861 21.3084 39.2433 21.6511C38.9006 21.9939 38.4358 22.1864 37.9511 22.1864H37.9328C37.4481 22.1864 36.9833 21.9939 36.6406 21.6511C36.2978 21.3084 36.1053 20.8436 36.1053 20.3589ZM29.5317 23.6229C28.0776 23.6229 26.6831 24.2005 25.6549 25.2287C24.6267 26.2568 24.0491 27.6514 24.0491 29.1054C24.0491 30.5595 24.6267 31.954 25.6549 32.9822C26.6831 34.0104 28.0776 34.588 29.5317 34.588C30.9858 34.588 32.3803 34.0104 33.4084 32.9822C34.4366 31.954 35.0143 30.5595 35.0143 29.1054C35.0143 27.6514 34.4366 26.2568 33.4084 25.2287C32.3803 24.2005 30.9858 23.6229 29.5317 23.6229ZM20.3941 29.1054C20.3941 26.682 21.3568 24.3578 23.0704 22.6441C24.7841 20.9305 27.1082 19.9678 29.5317 19.9678C31.9551 19.9678 34.2793 20.9305 35.993 22.6441C37.7066 24.3578 38.6693 26.682 38.6693 29.1054C38.6693 31.5289 37.7066 33.8531 35.993 35.5667C34.2793 37.2803 31.9551 38.243 29.5317 38.243C27.1082 38.243 24.7841 37.2803 23.0704 35.5667C21.3568 33.8531 20.3941 31.5289 20.3941 29.1054Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <svg
+                        width="60"
+                        height="59"
+                        viewBox="0 0 60 59"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <mask
+                          id="mask0_189_191"
+                          style="mask-type: luminance"
+                          maskUnits="userSpaceOnUse"
+                          x="15"
+                          y="13"
+                          width="34"
+                          height="33"
+                        >
+                          <path
+                            d="M15.9355 13.2145H48.1425V45.4214H15.9355V13.2145Z"
+                            fill="white"
+                          />
+                        </mask>
+                        <g mask="url(#mask0_189_191)">
+                          <path
+                            d="M41.2985 14.7231H46.2377L35.4484 27.086L48.1425 43.9119H38.2044L30.4149 33.7091L21.512 43.9119H16.5682L28.1075 30.684L15.9355 14.7254H26.1267L33.1571 24.0494L41.2985 14.7231ZM39.5617 40.9488H42.2992L24.6314 17.5321H21.696L39.5617 40.9488Z"
+                            fill="white"
+                          />
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <svg
+                        width="59"
+                        height="59"
+                        viewBox="0 0 59 59"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M21.8283 19.0768C21.8279 19.9546 21.4788 20.7963 20.8578 21.4166C20.2368 22.037 19.3948 22.3853 18.517 22.3849C17.6392 22.3844 16.7976 22.0353 16.1772 21.4143C15.5568 20.7933 15.2085 19.9513 15.209 19.0735C15.2094 18.1957 15.5585 17.3541 16.1795 16.7337C16.8005 16.1133 17.6425 15.7651 18.5203 15.7655C19.3981 15.7659 20.2398 16.1151 20.8601 16.7361C21.4805 17.3571 21.8288 18.1991 21.8283 19.0768ZM21.9276 24.8357H15.3083V45.5543H21.9276V24.8357ZM32.3862 24.8357H25.8V45.5543H32.32V34.682C32.32 28.6253 40.2136 28.0626 40.2136 34.682V45.5543H46.7502V32.4314C46.7502 22.221 35.067 22.6016 32.32 27.6158L32.3862 24.8357Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href=""
+                      ><svg
+                        width="59"
+                        height="59"
+                        viewBox="0 0 59 59"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <mask
+                          id="mask0_189_202"
+                          style="mask-type: luminance"
+                          maskUnits="userSpaceOnUse"
+                          x="11"
+                          y="14"
+                          width="37"
+                          height="30"
+                        >
+                          <path
+                            d="M29.7182 16.5248C46.1659 16.5248 46.1659 16.5248 46.1659 29.3174C46.1659 42.1101 46.1659 42.1101 29.7182 42.1101C13.2705 42.1101 13.2705 42.1101 13.2705 29.3174C13.2705 16.5248 13.2705 16.5248 29.7182 16.5248Z"
+                            fill="white"
+                            stroke="white"
+                            stroke-width="3.65505"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M26.0635 22.9204L37.0286 29.3167L26.0635 35.7131V22.9204Z"
+                            fill="black"
+                          />
+                        </mask>
+                        <g mask="url(#mask0_189_202)">
+                          <path
+                            d="M51.6476 7.38708H7.78711V51.2476H51.6476V7.38708Z"
+                            fill="white"
+                          />
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer sec -->
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
