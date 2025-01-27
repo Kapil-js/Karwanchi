@@ -7,8 +7,8 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/global.css" />
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" /> 
-    <link href="assets/css/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link href="assets/css/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- main header -->
@@ -16,7 +16,7 @@
       <nav class="navbar_nav">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-6">
               <div class="main_header_logo">
                 <a href="/">
                   <img
@@ -27,24 +27,29 @@
                 </a>
               </div>
             </div>
-            <div class="col-md-6 d-flex justify-content-end">
+            <div class="col-md-6 col-sm-6 d-flex justify-content-end">
               <div class="humburger_icon">
-                <div class="translte_inner">
-                  <svg
-                    width="19"
-                    height="18"
-                    viewBox="0 0 19 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M9.30225 17.1813C10.3506 17.1813 11.3886 16.9717 12.3572 16.5644C13.3257 16.1572 14.2057 15.5603 14.947 14.8078C15.6883 14.0553 16.2763 13.1619 16.6775 12.1787C17.0787 11.1955 17.2852 10.1418 17.2852 9.07758C17.2852 8.01338 17.0787 6.95961 16.6775 5.97642C16.2763 4.99324 15.6883 4.09989 14.947 3.3474C14.2057 2.5949 13.3257 1.99798 12.3572 1.59073C11.3886 1.18349 10.3506 0.973877 9.30225 0.973877M9.30225 17.1813C8.25392 17.1813 7.21585 16.9717 6.24732 16.5644C5.27879 16.1572 4.39876 15.5603 3.65748 14.8078C2.91619 14.0553 2.32818 13.1619 1.927 12.1787C1.52582 11.1955 1.31934 10.1418 1.31934 9.07758C1.31934 8.01338 1.52582 6.95961 1.927 5.97642C2.32818 4.99324 2.91619 4.09989 3.65748 3.3474C4.39876 2.5949 5.27879 1.99798 6.24732 1.59073C7.21585 1.18349 8.25392 0.973877 9.30225 0.973877M9.30225 17.1813C11.7512 17.1813 12.7979 12.5325 12.7979 9.07758C12.7979 5.6227 11.7512 0.973877 9.30225 0.973877M9.30225 17.1813C6.85327 17.1813 5.80662 12.5325 5.80662 9.07758C5.80662 5.6227 6.85327 0.973877 9.30225 0.973877M1.76283 6.37634H16.8417M1.76283 11.7788H16.8417"
-                      stroke="white"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                <div class="language-dropdown">
+                  <button class="dropdown-button">
+                    <svg
+                      width="19"
+                      height="18"
+                      viewBox="0 0 19 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M6.66512 6.96667C6.5924 7.62975 6.55662 8.29267 6.55662 8.91791C6.55662 9.54315 6.5924 10.2061 6.66512 10.8691H11.9394C12.0121 10.2061 12.0479 9.54315 12.0479 8.91791C12.0479 8.29267 12.0121 7.62975 11.9394 6.96667H6.66512ZM5.15683 6.96667C5.08909 7.63587 5.05662 8.29675 5.05662 8.91791C5.05662 9.53906 5.08909 10.1999 5.15683 10.8691H2.32861C2.15693 10.2349 2.06934 9.57868 2.06934 8.91791C2.06934 8.25714 2.15693 7.60091 2.32861 6.96667H5.15683ZM6.89634 5.46667H11.7081C11.5907 4.88589 11.4422 4.32842 11.2619 3.82213C10.9956 3.07448 10.6765 2.48633 10.3251 2.09735C9.98377 1.71956 9.64808 1.56421 9.30225 1.56421C8.95642 1.56421 8.62072 1.71956 8.27941 2.09735C7.92799 2.48633 7.60889 3.07448 7.34259 3.82213C7.16225 4.32842 7.01379 4.88589 6.89634 5.46667ZM6.42866 2.16949C6.23757 2.52983 6.07231 2.918 5.92954 3.31883C5.6922 3.98517 5.50663 4.71624 5.36877 5.46667H2.9154C3.25236 4.82211 3.68232 4.23123 4.19177 3.71406C4.83588 3.06021 5.59495 2.53646 6.42866 2.16949ZM1.11381 5.84056C1.15149 5.73753 1.19108 5.63512 1.23258 5.53341C1.67056 4.46004 2.3128 3.48404 3.12318 2.66139C3.93358 1.83873 4.89628 1.18555 5.95661 0.739698C7.01697 0.29384 8.15385 0.064209 9.30225 0.064209C10.4506 0.064209 11.5875 0.29384 12.6479 0.739698C13.7082 1.18555 14.6709 1.83873 15.4813 2.66139C16.2917 3.48404 16.9339 4.46004 17.3719 5.53341C17.4134 5.63512 17.453 5.73753 17.4907 5.84057C17.5377 5.9216 17.5701 6.01225 17.584 6.10886C17.8824 7.01327 18.0352 7.96182 18.0352 8.91791C18.0352 9.87399 17.8824 10.8225 17.584 11.727C17.5701 11.8236 17.5377 11.9142 17.4907 11.9952C17.453 12.0983 17.4134 12.2007 17.3719 12.3024C16.9339 13.3758 16.2917 14.3518 15.4813 15.1744C14.6709 15.9971 13.7082 16.6503 12.6479 17.0961C11.5875 17.542 10.4506 17.7716 9.30225 17.7716C8.15385 17.7716 7.01697 17.542 5.95661 17.0961C4.89628 16.6503 3.93358 15.9971 3.12318 15.1744C2.3128 14.3518 1.67056 13.3758 1.23258 12.3024C1.19108 12.2007 1.15149 12.0983 1.11381 11.9953C1.06675 11.9142 1.03443 11.8236 1.02052 11.727C0.722075 10.8225 0.569336 9.87399 0.569336 8.91791C0.569336 7.96182 0.722075 7.01327 1.02052 6.10886C1.03443 6.01225 1.06675 5.9216 1.11381 5.84056ZM2.9154 12.3691C3.25236 13.0137 3.68232 13.6046 4.19177 14.1218C4.83588 14.7756 5.59495 15.2993 6.42866 15.6663C6.23757 15.306 6.07231 14.9178 5.92954 14.517C5.6922 13.8506 5.50663 13.1196 5.36877 12.3691H2.9154ZM6.89635 12.3691C7.01379 12.9499 7.16225 13.5074 7.34259 14.0137C7.60889 14.7613 7.92799 15.3495 8.27941 15.7385C8.62072 16.1163 8.95642 16.2716 9.30225 16.2716C9.64808 16.2716 9.98377 16.1163 10.3251 15.7385C10.6765 15.3495 10.9956 14.7613 11.2619 14.0137C11.4422 13.5074 11.5907 12.9499 11.7081 12.3691H6.89635ZM13.2357 12.3691C13.0979 13.1196 12.9123 13.8506 12.6749 14.517C12.5322 14.9178 12.3669 15.306 12.1758 15.6663C13.0095 15.2993 13.7686 14.7756 14.4127 14.1218C14.9222 13.6046 15.3521 13.0137 15.6891 12.3691H13.2357ZM16.2759 10.8691C16.4476 10.2349 16.5352 9.57868 16.5352 8.91791C16.5352 8.25714 16.4476 7.6009 16.2759 6.96667H13.4477C13.5154 7.63587 13.5479 8.29675 13.5479 8.91791C13.5479 9.53906 13.5154 10.1999 13.4477 10.8691H16.2759ZM13.2357 5.46667H15.6891C15.3521 4.82211 14.9222 4.23123 14.4127 3.71406C13.7686 3.06021 13.0095 2.53647 12.1758 2.1695C12.3669 2.52983 12.5322 2.918 12.6749 3.31883C12.9123 3.98517 13.0979 4.71624 13.2357 5.46667Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </button>
+                  <div class="dropdown-menu">
+                    <a href="#">English</a>
+                    <a href="#">French</a>
+                  </div>
                 </div>
                 <div
                   class="humburger_inner"
@@ -101,7 +106,7 @@
                   <nav class="nav_bar">
                     <ul>
                       <li class="nav-item">
-                        <a href="/about.html" class="nav-link">Home</a>
+                        <a href="/" class="nav-link">Home</a>
                       </li>
                       <li class="nav-item">
                         <a href="/about.html" class="nav-link">About Us</a>
@@ -286,7 +291,7 @@
             <div class="carousel-item active" style="background-color: #c00d0d">
               <div class="container">
                 <div class="row align-items-center carousel_row">
-                  <div class="col-md-6">
+                  <div class="col-xl-6 col-md-12" data-aos="fade-right" data-aos-duration="1500" >
                     <div class="carousel_img red_img">
                       <img
                         src="assets/Images/coldrink-img.png"
@@ -300,7 +305,7 @@
                       />
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-xl-6 col-md-12" data-aos="fade-left" data-aos-duration="1500">
                     <div class="carousel_content text-center">
                       <img
                         src="assets/Images/slider-logo.svg"
@@ -321,7 +326,7 @@
             >
               <div class="container">
                 <div class="row align-items-center carousel_row">
-                  <div class="col-md-6">
+                  <div class="col-xl-6 col-md-12" data-aos="fade-right" data-aos-duration="1500" >
                     <div class="carousel_img purple_img">
                       <img
                         src="assets/Images/coldrink-img-2.png"
@@ -335,7 +340,7 @@
                       />
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-xl-6 col-md-12" data-aos="fade-left" data-aos-duration="1500">
                     <div class="carousel_content text-center">
                       <img
                         src="assets/Images/slider-logo.svg"
@@ -351,7 +356,7 @@
             <div class="carousel-item" style="background-color: #00b1ac">
               <div class="container">
                 <div class="row align-items-center carousel_row">
-                  <div class="col-md-6">
+                  <div class="col-xl-6 col-md-12" data-aos="fade-right" data-aos-duration="1500" >
                     <div class="carousel_img green_img">
                       <img
                         src="assets/Images/coldrink-img-3.png"
@@ -365,7 +370,7 @@
                       />
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-xl-6 col-md-12" data-aos="fade-left" data-aos-duration="1500">
                     <div class="carousel_content text-center">
                       <img
                         src="assets/Images/slider-logo.svg"
@@ -445,7 +450,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
-            <div class="heading text-center">
+            <div class="heading text-center" data-aos="fade-down" data-aos-duration="1500">
               <h4>Our Brands</h4>
               <h2>Brands with a Quality You Can Trust</h2>
             </div>
@@ -592,7 +597,7 @@
     <section class="stats-sec">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12" data-aos="fade-down" data-aos-duration="1500">
             <div class="stat-name">
               <img
                 src="assets/Images/state-name.svg"
@@ -605,7 +610,7 @@
               <h2>Brands with a Quality You Can Trust</h2>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-xl-3 col-md-6" data-aos="fade-down" data-aos-duration="1500">
             <div class="stat-item">
               <img
                 src="assets/Images/customer-satisfaction-icon.svg"
@@ -615,21 +620,21 @@
               <div class="number" data-target="99">0%</div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-xl-3 col-md-6" data-aos="fade-down" data-aos-duration="1500">
             <div class="stat-item">
               <img src="assets/Images/total-products-icon.svg" alt="icon" />
               <div class="stat-text">Total Products</div>
               <div class="number" data-target="200">0+</div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-xl-3 col-md-6" data-aos="fade-down" data-aos-duration="1500">
             <div class="stat-item">
               <img src="assets/Images/team-members-icon.svg" alt="icon" />
               <div class="stat-text">Team members</div>
               <div class="number" data-target="500">0+</div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-xl-3 col-md-6" data-aos="fade-down" data-aos-duration="1500">
             <div class="stat-item">
               <img src="assets/Images/retail-stores-icon.svg" alt="icon" />
               <div class="stat-text">Retail Stores</div>
@@ -646,7 +651,7 @@
     <section class="insta-feed-sec">
       <div class="row p-0 m-0">
         <div class="col-md-12">
-          <div class="insta-feed-logo text-center">
+          <div class="insta-feed-logo text-center" data-aos="fade-down" data-aos-duration="1500">
             <img
               src="assets/Images/slider-logo.svg"
               alt="insta logo"
@@ -751,7 +756,7 @@
     <footer class="main-footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-xl-3 col-md-3">
             <div class="footer-item">
               <div class="footer-logo">
                 <a href="">
@@ -764,7 +769,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-5">
+          <div class=" col-xl-3 col-md-9">
             <div class="footer-item">
               <div class="footer-links">
                 <ul>
@@ -790,8 +795,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="footer-item d-flex justify-content-end">
+          <div class="col-xl-3 col-md-12 ">
+            <div class="footer-item d-flex justify-content-xl-end justify-content-md-center mt-md-4">
               <div class="socal-links">
                 <ul>
                   <li>

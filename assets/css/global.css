@@ -95,6 +95,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Outfit", serif;
+  overflow-x: hidden;
 }
 
 h1,
@@ -144,6 +145,9 @@ li {
 }
 .main_header .header-offcanvas {
   background-color: var(--primary-color);
+}
+.main_header .offcanvas.offcanvas-end {
+  width: 600px;
 }
 
 .main_header .header-offcanvas .offcanvas-header {
@@ -203,6 +207,8 @@ li {
   -webkit-animation: mover 1.5s infinite alternate;
   animation: mover 1.5s infinite alternate;
   z-index: 1;
+  height: 550px;
+  object-fit: contain;
 }
 
 .hero_sec .hero_inner_slider .carousel-item .carousel_img {
@@ -583,12 +589,68 @@ li {
   align-items: center;
 }
 
+.language-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  background-color: transparent;
+  border: none;
+  border-radius: 6px;
+  width: 42px;
+  height: 29px;
+  border: 1px solid var(--white-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-button:hover {
+  background-color: #a00;
+}
+
+/* .dropdown-button svg {
+  width: 24px;
+  height: 24px;
+} */
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin-top: 8px;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.2s;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+.language-dropdown:hover .dropdown-menu {
+  display: block;
+}
 .other-page-hero-sec .inner-video {
   position: relative;
 }
 .other-page-hero-sec .inner-video .hero-main-video {
   width: 100%;
-  height: 100%;
+  object-fit: cover;
+  height: 720px;
 }
 .other-page-hero-sec .inner-video::before {
   content: "";
@@ -606,6 +668,7 @@ li {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  width: 100%;
 }
 .other-page-hero-sec .inner-video .hero-content .breadcurb ul {
   display: flex;
@@ -1162,3 +1225,477 @@ li {
   transform: scale(1.2);
 }
 
+@media (max-width: 1600px) {
+  .values-sec .other-page-heaidng {
+    margin-left: 50px;
+  }
+  /* .values-sec .values-inner-main {
+    margin-left: -180px;
+  } */
+  .values-sec .values-inner-main .value-circle.mission {
+    right: 33%;
+  }
+  .values-sec .values-inner-main .value-circle.vision {
+    right: 15%;
+  }
+  .values-sec .values-inner-main .value-circle.goals {
+    right: 37%;
+  }
+  .history-sec .big-title h1 {
+    font-size: 240px;
+  }
+}
+@media (max-width: 1199px) {
+  .history-sec .big-title h1 {
+    font-size: 140px;
+  }
+  .history-sec .history-img img {
+    max-width: 460px;
+  }
+  .products-sec .col-md-3 {
+    width: 33%;
+  }
+}
+@media (max-width: 991px) {
+  .products-sec {
+    margin: 60px 0;
+  }
+  .hero_sec .hero_inner_slider .carousel-item {
+    height: 100%;
+  }
+  .hero_sec .hero_inner_slider .carousel-item .carousel_content img {
+    max-width: 380px;
+  }
+  .hero_sec .explore-text {
+    right: 37%;
+    transform: translateX(-50%);
+  }
+  .hero_sec
+    .hero_inner_slider
+    .carousel-item
+    .carousel_content
+    .slider_heading {
+    font-size: 33px;
+    line-height: 68px;
+  }
+  .hero_sec .hero_inner_slider .carousel-item .purple_img .purple-bg {
+    left: 360px;
+    max-width: 430px !important;
+  }
+  .hero_sec .hero_inner_slider .carousel-item .green_img .lemon-bg {
+    max-width: 430px !important;
+    left: 360px;
+  }
+  .hero_sec .hero_inner_slider .carousel-item .red_img .red-cock {
+    max-width: 430px !important;
+    left: 360px;
+  }
+  .hero_sec .hero_inner_slider .carousel-item .carousel_img .product-image {
+    margin: 0 auto;
+  }
+  .main_header {
+    padding: 30px 20px;
+  }
+  .about-sec .about-inner-content .btn-about {
+    font-size: 18px;
+    padding: 9px 41px;
+  }
+  .brands-sec {
+    padding: 30px 0 40px 0;
+  }
+  .heading h2 {
+    font-size: 30px;
+    line-height: 26px;
+  }
+  .made-in-title h3 {
+    font-size: 20px;
+  }
+  .stats-sec .stat-item {
+    margin-top: 60px;
+  }
+  .stats-sec {
+    margin: 30px 0 40px 0;
+  }
+  .stats-sec .stat-item .number {
+    font-size: 30px;
+    line-height: 28px;
+  }
+  .stats-sec .stat-item img {
+    margin-bottom: 50px;
+    height: 50px;
+  }
+  .insta-feed-sec {
+    padding: 40px 0 20px 0;
+  }
+  .insta-feed-sec .insta-feed-logo img {
+    max-width: 170px;
+  }
+  .insta-feed-sec .insta-feed-logo {
+    margin-bottom: 50px;
+  }
+  .insta-feed-sec .madein h3 {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  .main-footer {
+    padding: 40px 0;
+  }
+  .main_header .offcanvas-body .nav_bar ul li a {
+    font-size: 26px;
+    line-height: 33px;
+  }
+  .other-page-hero-sec .inner-video .hero-content .hero-main-heading h2 {
+    font-size: 91px;
+  }
+  .other-page-hero-sec .inner-video .hero-content .hero-main-heading img {
+    max-width: 116px;
+  }
+  .other-page-hero-sec .inner-video .hero-main-video {
+    height: 540px;
+  }
+  .values-sec .values-inner-main .value-circle {
+    position: inherit;
+  }
+  .values-sec {
+    margin: 50px 0 420px 0;
+  }
+  .other-page-heaidng h2 {
+    font-size: 30px;
+  }
+  .other-page-heaidng h2::before {
+    width: 8px;
+    height: 32px;
+    left: -14px;
+    top: 18px;
+  }
+  .values-sec .other-page-heaidng {
+    margin-bottom: 40px;
+  }
+  .values-sec .container .other-page-heaidng p {
+    font-size: 17px;
+    line-height: 27px;
+    margin-top: 0px;
+  }
+  .values-sec .values-inner-main .center-value-key h2 {
+    font-size: 37px;
+    line-height: normal;
+  }
+  .values-sec .values-inner-main .center-value-key img {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    max-width: 355px;
+  }
+  .history-sec .big-title h1 {
+    font-size: 90px;
+    line-height: normal;
+  }
+  .history-sec .history-img {
+    margin-top: 0;
+  }
+  .history-sec .history-content p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .history-sec {
+    margin-bottom: 30px;
+  }
+  .history-sec .other-page-heaidng {
+    margin-top: 30px;
+  }
+  .products-sec .product-card .product-img .product-image {
+    height: 260px;
+    width: 100px;
+  }
+  .products-sec .product-card .product-animation {
+    width: 270px;
+  }
+  .products-sec .product-card .product-title {
+    font-size: 20px;
+  }
+  .carrer-sec .contact-img img {
+    max-width: 460px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .carrer-sec {
+    margin: 50px 0;
+  }
+  .contact-sec .contact-form h3 {
+    font-size: 30px;
+    line-height: 63px;
+    margin-bottom: 30px;
+  }
+  .contact-sec .contact-form .form-group {
+    margin-bottom: 15px;
+  }
+  .current-job-open-sec {
+    margin-bottom: 40px;
+  }
+  .why-join-sec .karwanchi-buiding-img .karwanchi-content h2 {
+    font-size: 30px;
+    line-height: 46px;
+    margin-bottom: 10px;
+  }
+  .why-join-sec .karwanchi-buiding-img .karwanchi-content p {
+    font-size: 16px;
+    line-height: 23px;
+    padding: 0 20px;
+  }
+  .contact-sec .contact-img img {
+    max-width: 440px;
+    display: flex;
+    margin: 0 auto;
+  }
+  .information-sec .stat-item .stat-text {
+    font-size: 20px;
+    line-height: 33px;
+  }
+  .information-sec .stat-item a {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+@media (max-width: 767px) {
+  .hero_sec .made_in_text h3 {
+    font-size: 20px;
+  }
+  .hero_sec .made_in_text {
+    right: -39px;
+    top: 230px;
+  }
+  .hero_sec .hero_inner_slider .carousel-item .red_img .red-cock {
+    left: 249px;
+  }
+  .hero_sec .hero_inner_slider .carousel-item .purple_img .purple-bg {
+    left: 270px;
+  }
+  .hero_sec .hero_inner_slider .carousel-item .carousel_content img {
+    margin-top: 20px;
+  }
+  .hero_sec .explore-text {
+    right: 31%;
+    bottom: 20px;
+  }
+  .hero_sec
+    .hero_inner_slider
+    .carousel-item
+    .carousel_content
+    .slider_heading {
+    font-size: 27px;
+    line-height: 55px;
+  }
+  .about-sec .made_in_text h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .hero_sec .hero_inner_slider .carousel-item .carousel_content img {
+    max-width: 250px;
+  }
+  .hero_sec .hero_inner_slider .carousel-item .green_img .lemon-bg {
+    left: 310px;
+  }
+  .main_header .col-md-6 {
+    width: 50%;
+  }
+  .main_header .main_header_logo {
+    width: 100%;
+    max-width: 160px;
+  }
+  .hero_sec .hero_inner_slider .carousel-item .carousel_content img {
+    max-width: 180px;
+  }
+  .about-sec .made_in_text {
+    right: -42px;
+    bottom: 110px;
+  }
+  .about-sec .about-inner-content .btn-about {
+    bottom: 30px;
+  }
+  .insta-feed-sec .swiper-wrapper .swiper-slide .brand-img img {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .main-footer .footer-logo {
+    margin-bottom: 30px;
+  }
+  .main-footer .footer-links ul li a {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .main-footer .socal-links ul {
+    margin-top: 20px;
+  }
+  .main-footer .socal-links ul li a svg {
+    width: 40px;
+    height: 40px;
+  }
+  .other-page-hero-sec .inner-video .hero-content .hero-main-heading h2 {
+    font-size: 47px;
+    margin-bottom: 18px;
+  }
+  .other-page-hero-sec .inner-video .hero-content .hero-main-heading img {
+    max-width: 66px;
+  }
+  .other-page-hero-sec .inner-video .hero-content .sub-headng {
+    font-size: 20px;
+    line-height: 45px;
+    margin-top: 0px;
+  }
+  .main_header .humburger_icon {
+    gap: 30px;
+  }
+  .other-page-hero-sec .inner-video .hero-main-video {
+    height: 410px;
+  }
+  .history-sec .big-title h1 {
+    font-size: 50px;
+  }
+  .history-sec .history-content {
+    margin-top: 10px;
+  }
+  .values-sec .other-page-heaidng {
+    margin-left: 20px;
+  }
+  .products-sec {
+    margin: 40px 0;
+  }
+  .carrer-sec .contact-form {
+    padding: 0 20px;
+  }
+  .current-job-open-sec .latest-jobs-inner {
+    margin-top: 20px;
+  }
+  .current-job-open-sec
+    .latest-jobs-inner
+    .accordion
+    .accordion-item
+    .accordion-button
+    .job-title {
+    font-size: 15px;
+  }
+  .current-job-open-sec
+    .latest-jobs-inner
+    .accordion
+    .accordion-item
+    .accordion-button
+    span {
+    font-size: 14px;
+  }
+  .current-job-open-sec
+    .latest-jobs-inner
+    .accordion
+    .accordion-item
+    .accordion-button
+    span
+    svg {
+    width: 18px;
+  }
+  .current-job-open-sec
+    .latest-jobs-inner
+    .accordion
+    .accordion-item
+    .accordion-button {
+    padding: 18px 18px;
+  }
+  .why-join-sec .karwanchi-buiding-img .karwanchi-content {
+    top: 20px;
+  }
+  .why-join-sec .karwanchi-buiding-img .karwanchi-content h2 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 3px;
+  }
+  .why-join-sec .karwanchi-buiding-img .karwanchi-content p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 567px) {
+  .main_header .offcanvas-body .nav-logo img {
+    max-width: 64px;
+  }
+  .main_header .offcanvas-body .nav_bar ul li a {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .main_header .offcanvas-body .social-links ul li a svg {
+    width: 45px;
+  }
+  .main_header {
+    padding: 20px 4px;
+  }
+  .hero_sec .hero_inner_slider .carousel-item .red_img .red-cock {
+    left: 159px;
+    top: 37%;
+  }
+  .hero_sec .hero_inner_slider .carousel-item .purple_img .purple-bg {
+    left: 159px;
+    top: 37%;
+  }
+  .hero_sec .hero_inner_slider .carousel-item .green_img .lemon-bg {
+    left: 180px;
+    top: 41%;
+  }
+  .hero_sec .explore-text {
+    right: 33%;
+    bottom: 16px;
+  }
+  .hero_sec .explore-text h3 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .about-sec .about-inner-content .btn-about {
+    bottom: 20px;
+    font-size: 13px;
+    padding: 7px 30px;
+  }
+  .heading h2 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .heading h4 {
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 2px;
+  }
+  .brands-sec .brandsSwiper::before {
+    display: none;
+  }
+  .brands-sec .brandsSwiper::after {
+    display: none;
+  }
+  .brands-sec .brandsSwiper .swiper-slide img {
+    height: 60px;
+  }
+  .main-footer .footer-logo {
+    width: 70px;
+  }
+  .other-page-heaidng h2 {
+    font-size: 22px;
+    line-height: 38px;
+  }
+  .other-page-heaidng h2::before {
+    width: 6px;
+    height: 24px;
+    left: -12px;
+    top: 6px;
+  }
+  .why-join-sec .karwanchi-buiding-img .karwanchi-content {
+    position: inherit;
+    color: var(--black-color);
+    margin-bottom: 40px;
+  }
+  .why-join-sec .karwanchi-buiding-img .karwanchi-content h2 {
+    color: var(--black-color);
+  }
+  .why-join-sec .karwanchi-buiding-img .karwanchi-content p {
+    color: var(--black-color);
+  }
+  .why-join-sec .karwanchi-buiding-img::before {
+    display: none;
+  }
+}

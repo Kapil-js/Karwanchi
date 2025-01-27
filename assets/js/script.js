@@ -31,6 +31,28 @@ var swiper = new Swiper(".brandsSwiper", {
     delay: 2500,
     disableOnInteraction: false,
   },
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    991: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 7,
+      spaceBetween: 50,
+    },
+  },
 });
 var swiper = new Swiper(".instafeed", {
   slidesPerView: 5,
@@ -39,6 +61,28 @@ var swiper = new Swiper(".instafeed", {
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    991: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 50,
+    },
   },
 });
 
