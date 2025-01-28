@@ -751,6 +751,9 @@ li {
   margin: 120px 0 350px 0;
   position: relative;
 }
+.values-sec .other-page-heaidng {
+  margin-left: 50px;
+}
 .values-sec .container .other-page-heaidng p {
   max-width: 520px;
   font-weight: 400;
@@ -1233,19 +1236,68 @@ li {
     margin-left: -180px;
   } */
   .values-sec .values-inner-main .value-circle.mission {
-    right: 33%;
+    right: 28%;
   }
   .values-sec .values-inner-main .value-circle.vision {
     right: 15%;
   }
   .values-sec .values-inner-main .value-circle.goals {
-    right: 37%;
+    right: 28%;
   }
   .history-sec .big-title h1 {
     font-size: 240px;
   }
+  /* .values-sec .values-inner-main {
+    margin-left: -170px;
+  } */
+  .values-sec .values-inner-main .value-circle {
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .values-sec .values-inner-main .center-value-key {
+    max-width: 440px;
+  }
+  .values-sec .values-inner-main .center-value-key h2 {
+    font-size: 70px;
+    line-height: 73px;
+  }
+  .values-sec .values-inner-main .value-circle svg {
+    width: 50px;
+    height: auto;
+  }
+  .values-sec .values-inner-main .value-circle h3 {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+  .values-sec .values-inner-main .value-circle p {
+    font-size: 14px;
+    line-height: 21px;
+    max-width: 200px;
+  }
+  .values-sec {
+    margin: 80px 0 220px 0;
+  }
 }
 @media (max-width: 1199px) {
+  .values-sec .values-inner-main .value-circle.mission {
+    right: 15%;
+  }
+  .values-sec .values-inner-main .value-circle.vision {
+    right: 1%;
+  }
+  .values-sec .values-inner-main .value-circle.goals {
+    right: 15%;
+    bottom: -36%;
+  }
+  .other-page-heaidng h2 {
+    font-size: 40px;
+  }
+  .values-sec .container .other-page-heaidng p {
+    max-width: 400px;
+    font-size: 18px;
+    line-height: 29px;
+    margin-top: 5px;
+  }
   .history-sec .big-title h1 {
     font-size: 140px;
   }
@@ -1257,6 +1309,12 @@ li {
   }
 }
 @media (max-width: 991px) {
+  .values-sec .values-inner-main .value-circle {
+    margin: 40px auto;
+}
+  .values-sec .container .other-page-heaidng p {
+    max-width: 100%;
+  }
   .products-sec {
     margin: 60px 0;
   }
@@ -1356,9 +1414,9 @@ li {
   .values-sec .values-inner-main .value-circle {
     position: inherit;
   }
-  .values-sec {
+  /* .values-sec {
     margin: 50px 0 420px 0;
-  }
+  } */
   .other-page-heaidng h2 {
     font-size: 30px;
   }
